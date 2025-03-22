@@ -1,3 +1,4 @@
+
 body{
     height: 100%;
     margin: 0;
@@ -42,11 +43,44 @@ nav a{
 }
 .blue-btn{
     background-color: #00ADB5;
+    top: 50%;
+    white-space: nowrap;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    animation: moveLeft 1s linear infinite;
+}
+
+@keyframes moveLeft {
+    0% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(-20px);
+    }
 }
 .grey-btn{
     background-color:  #CCCCCCCC;
+        font-size: 16px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        animation: pulse 1.5s infinite alternate ease-in-out;
+        animation-name: pulse;
+    }
     
-}
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(1.2);
+        }
+    }
 .big-text{
     font-size: 64px;
     font-weight: 800;
@@ -70,6 +104,30 @@ nav a{
 
 .text{
     width: 300px;
+}
+
+.button{
+    background-color: #00ADB5;
+    top: 50%;
+    white-space: nowrap;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    animation: moveRight 1s linear infinite;
+    
+}
+
+@keyframes moveRight{
+        0% {
+            transform: translateY(0px);
+        }
+        100% {
+            transform: translateY(30px);
+        }
+            
 }
 
 
@@ -116,7 +174,67 @@ margin-right: 40px;
     opacity: 0.5;
     transition: 0.5s;
 }
+#first{
+    top: 50%;
+    white-space: nowrap;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    animation: atakrash 2s linear infinite;   
+}
 
+@keyframes atakrash{
+    100%{
+        transform: skew(15deg, 15deg);
+    }
+}
+
+#second{
+    top: 50%;
+    white-space: nowrap;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    animation: just 1s linear infinite;  
+}
+
+@keyframes just{
+    0%{
+        transform: skew(-0.06turn, 18deg);
+    }
+}
+
+#third{
+    top: 50%;
+    white-space: nowrap;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    animation: tri 1.5s linear infinite;   
+}
+@keyframes tri{
+    0%{
+        transform: scale(-0.5, 1);
+    }
+}
+
+#fourth{
+    top: 50%;
+    white-space: nowrap;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    animation: sri 2s linear infinite;    
+}
+@keyframes sri{
+    0%{
+        transform: rotate(20deg);
+    }
+}
 footer a{ 
     margin: 20px;
     color: white;
@@ -144,7 +262,3 @@ footer{
 .hrefs{
     display: flex;
 }
-
-
-
-
